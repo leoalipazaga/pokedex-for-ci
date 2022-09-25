@@ -1,0 +1,17 @@
+name: CI Test
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  hello_coders:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Echo this message
+        run: |
+          echo "hola Leo"
+      - name: date
+        run: date
+      - run: ls -l
