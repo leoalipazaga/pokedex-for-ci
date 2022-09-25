@@ -5,4 +5,5 @@ cypress/support
 cypress/videos
 cypress/e2e
 cypress/fixtures
+cypress/download
 cypress/screenshots
