@@ -1,0 +1,17 @@
+name: CI Test
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  avoid_redundancy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: styfle/cancel-workflow-action
+        with:
+          access_token: ${{ github.token }}
