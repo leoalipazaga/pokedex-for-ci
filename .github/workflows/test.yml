@@ -42,7 +42,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: building
-        run: npm build
+        run: npm run build
       - uses: actions/upload-artifact@v3
         with:
           name: dist
